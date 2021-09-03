@@ -14,7 +14,6 @@
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-knobs": "^6.3.0",
     "@storybook/addon-links": "^6.3.7",
-    "@storybook/react": "^6.3.7",
     "@svgr/rollup": "^5.5.0",
     "@svgr/webpack": "^5.5.0",
     "babel-loader": "^8.2.2",
@@ -31,12 +30,19 @@
   },
   "scripts": {
     "sb": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-sb": "build-storybook",
     "build": "rollup -c",
-    "build:types": "tsc --emitDeclarationOnly"
+    "build:types": "tsc --emitDeclarationOnly",
+    "start": "node dist/index.js"
   },
   "peerDependencies": {
     "@emotion/react": "^11.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@storybook/react": "^6.3.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
